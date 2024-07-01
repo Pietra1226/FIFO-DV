@@ -1,6 +1,6 @@
 # FIFO-DV
 ## GOAL: Using SystemVerilog to build a FIFO module and verify it.
-![image](https://hackmd.io/_uploads/ByY6ahkvR.png)
+![image](https://github.com/Pietra1226/FIFO-DV/blob/main/FIFO.png)
 
 ![image](https://hackmd.io/_uploads/BkrXf61DC.png)
 Provide by: [AMD](https://docs.amd.com/r/en-US/pg327-emb-fifo-gen/Native-FIFO-Interface-Signals)
