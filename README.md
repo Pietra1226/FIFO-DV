@@ -10,4 +10,4 @@ The table provided the required interface of the common clock FIFO. I used this 
 2. **almost_full**: When asserted, this signal indicates that only one more write can be performed before the FIFO is full.
 
 This is the FIFO configuration of my project.
-![image](https://hackmd.io/_uploads/HkzhGayvR.png)
+![image](https://github.com/Pietra1226/FIFO-DV/blob/main/My%20FIFO.png)
