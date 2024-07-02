@@ -12,4 +12,12 @@ The table provided the required interface of the common clock FIFO. I used this 
 This is the FIFO configuration of my project.
 ![image](https://github.com/Pietra1226/FIFO-DV/blob/main/My%20FIFO.png)
 
+I used the verification architecture like the picture below. I seperate the process into six section.
+First, I created a class called "Generator" which could generate input for test randomly.
+Next, I built a class called "Driver" which sent the whole bag of input data to DUT(Design Under Test, which is my FIFO design in this case), and printed what data I've written or read.
+Third, I used a class called "Monitor" to show what the state is for each objects in DUT, and it will also send the DUT's result to the next section comparing to the golden result.
+Fourth, I set up a class called "Scoreboard" to compare the result from "Monitor" and to indicate the verification is correct or not.
+Last, I consisted all the section into a section called "Environment" which I could change the value from here instead of revising all the data seperating in different sections.
+![image](https://github.com/Pietra1226/FIFO-DV/blob/main/Verification%20Architecture.png)
+
 Tool: AMD Vivado 2023.2
