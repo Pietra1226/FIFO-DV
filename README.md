@@ -1,4 +1,4 @@
-# FIFO-DV
+# FIFO-Design & Verification
 ## GOAL: Using SystemVerilog to build a FIFO module and verify it.
 ![image](https://github.com/Pietra1226/FIFO-DV/blob/main/FIFO.png)
 
@@ -11,3 +11,5 @@ The table provided the required interface of the common clock FIFO. I used this 
 
 This is the FIFO configuration of my project.
 ![image](https://github.com/Pietra1226/FIFO-DV/blob/main/My%20FIFO.png)
+
+Tool: AMD Vivado 2023.2
