@@ -4,6 +4,7 @@
 
 ![image](https://github.com/Pietra1226/FIFO-DV/blob/main/FIFO%20Interface.png)
 Provide by: [AMD](https://docs.amd.com/r/en-US/pg327-emb-fifo-gen/Native-FIFO-Interface-Signals)
+
 The table provided the required interface of the common clock FIFO. I used this table to build up my FIFO project in 8 bit and it can store 16 data. Additionally, I added two signals named almost_empty and almost_full which is optional.
 
 1. **almost_empty**: When asserted, this signal indicates that the FIFO is almost empty and one word remains in the FIFO.
