@@ -33,3 +33,10 @@ Last, I consisted all the section into a section called "Environment" which I co
 ![image](https://github.com/Pietra1226/FIFO-DV/blob/main/Verification%20Architecture.png)
 
 Tool: AMD Vivado 2023.2
+
+### My Asynchronous FIFO Project
+Async FIFO相較於Sync困難很多，首先是面對不同clk domain不可以再透過簡單的counter來計數判斷Full or Empty，因為時序不同可能造成錯誤判讀。所以要使用pointer的位置來判斷當前屬於full or empty。
+而使用pointer來判斷full or empty又會衍生一個問題，一般而言會設定read write pointer重疊就是full或empty，不過是read pointer + 1 追趕上write pointer而造成的empty，還是write pointer已經將全部位置寫滿 +1 追上 read pointer而造成的 Full呢?
+為了解決這個問題，會將pointer多一個bit來儲存。
+
+下面這張圖可以看到，pointer後三碼用grey code儲存，當今天wptr和rptr相同，則去看MSB是否一樣，若一樣就是empty，若不一樣則去檢查MSB，若wptr MSB是1，代表write已經繞一圈了，此時代表full了，會把Full flag設為1。相反，若rptr MSB是1則會把Empty Flag設為1。
