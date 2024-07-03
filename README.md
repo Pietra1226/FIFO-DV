@@ -1,5 +1,9 @@
 # FIFO-Design & Verification
 ## GOAL: Using SystemVerilog to build a FIFO module and verify it.
+### Introduction
+FIFO ( First In First Out ) is essentially a type of RAM. The difference from normal memory is that there is no external address line and it is very simple to use. But the disadvantage is that data can only be written in order, and data can only be read out in order. Because it uses its internal pointer to automatically plus 1 to operate, it cannot read or write the desired address like a general memory.
+
+### FIFO Configuration
 ![image](https://github.com/Pietra1226/FIFO-DV/blob/main/FIFO.png)
 
 ![image](https://github.com/Pietra1226/FIFO-DV/blob/main/FIFO%20Interface.png)
@@ -10,6 +14,7 @@ The table provided the required interface of the common clock FIFO. I used this 
 1. **almost_empty**: When asserted, this signal indicates that the FIFO is almost empty and one word remains in the FIFO.
 2. **almost_full**: When asserted, this signal indicates that only one more write can be performed before the FIFO is full.
 
+### My FIFO Project
 This is the FIFO configuration of my project.
 ![image](https://github.com/Pietra1226/FIFO-DV/blob/main/My%20FIFO.png)
 
