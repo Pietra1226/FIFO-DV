@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: University of Michigan ECE (IC&VLSI)
+// Engineer: Yen-Cheng Lin
 // 
 // Create Date: 2024/07/01 13:17:33
 // Design Name: 
@@ -9,7 +9,7 @@
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
+// Description: Synchronous FIFO Design & Verification
 // 
 // Dependencies: 
 // 
