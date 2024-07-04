@@ -9,7 +9,7 @@
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: Synchronous FIFO Design & Verification
+// Description: Synchronous FIFO Design
 // 
 // Dependencies: 
 // 
